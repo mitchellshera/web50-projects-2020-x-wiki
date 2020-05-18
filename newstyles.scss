@@ -1,0 +1,157 @@
+$marginl:40px;
+$marginb:20px;
+$margint:20px;
+
+.aboutlist {
+li
+{
+  margin-left: $marginl
+}
+ p::before
+{
+  content: "\21d2 \21d2";
+  font-weight: bold;
+  margin-left: -20px;
+}
+ p::selection
+{
+  background-color: #F4A460;
+}}
+
+.paragraphcasual
+{
+  margin-left: $marginl
+
+}
+.paragraphcasual::selection
+{
+  background-color: #F4A460;
+}
+%message
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size:30px;
+  margin-top: $margint
+
+}
+.aboutlist h1
+{
+  @extend %message;
+  background-color: #D8BFD8;
+  margin-left:-56px;
+}
+.aboutlist h2
+{
+  @extend %message;
+  background-color: #FFDAB9;
+  margin-left:-56px;
+}
+.aboutlist h3
+{
+  @extend %message;
+  background-color: #BDB76B;
+  margin-left:-56px;
+}
+.aboutlist h4
+{
+  @extend %message;
+  background-color: #FFB6C1;
+  margin-left:-56px;
+}
+.tablediv
+{
+  border: 3px solid #000;
+  background-color: #FAEBD7;
+  margin-left: 20%;
+  margin-bottom: $marginb
+
+}
+.tablediv tr td
+{
+  border: 3px solid #000;
+}
+
+
+.navbar-brand img
+{
+width:140px;
+display:flex;
+flex-wrap: wrap;
+position:absolute;
+}
+
+.navbar-brand
+{
+  left:40%;
+  transform: translateX(-50%);
+  top:-18px;
+  position:absolute;
+
+}
+.header
+{
+background-color: pink;
+}
+ .navbar
+ {
+   padding: 0 0 !important;
+   height: 120px;
+   background-color: pink;
+   margin-bottom: 30px;
+ }
+.navbar-toggler
+{
+border: none !important;
+outline:none !important;
+padding:0 !important;
+margin-top:30px;
+
+}
+#footer{
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #DCDCDC;
+   color: black;
+   text-align: center;
+}
+.forbackcolor{background-color: #FFF8DC;
+}
+
+/*DREAM-CLOSET*/
+.show img
+{
+  width:20%;
+  padding: 20px 20px;
+  margin-left: $marginl
+}
+@media (max-width:375px){
+  .tablediv{
+    display: block;
+    margin-left: 0px;
+    border: 1px solid #000;
+  }
+  .tablediv td tr
+  {
+    border: 1px solid #000;
+  }
+  body{
+    width: 168%;
+  }
+  .show img{
+    margin-right: 40px;
+  }
+}
+
+@media (max-width:768px){
+  .tablediv{
+    display: block;
+    margin-left: 0px;
+  }
+  .show img{
+    margin-right: -30px;
+  }
+}
