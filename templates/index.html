@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>SEARCH</title>
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body , style="background-color?:beige;">
+<section class="header">
+     <nav class="navbar navbar-expand-lg navbar-light", style="background-color:pink;">
+  <a class="navbar-brand" href="#"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" style="margin-left:auto; ">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">LOGOUT</a>
+      </li>
+        <li class="nav-item"><a class="nav-link" href="#">{{ session.user_name }}</a></li>
+
+
+    </ul>
+  </div>
+</nav>
+</section>
+    <h1 , style="font-family:serif;margin-left:33%;margin-top:70px;">SEARCH FOR A BOOK</h1>
+   <form action="/search" method="GET">
+        <div class="form-group", style="margin-left:20%;margin-right:20%;margin-top:3%">
+            <input type="text" class="form-control" name="book" autofocus aria-describedby="bookHelp" placeholder="ISBN, Title or Author">
+            <small id="bookHelp" class="form-text text-muted">Example: 0380795272 or Krondor:The Betrayal or Raymond E. Feist</small>
+        </div>
+        <button class="btn btn-primary" type="submit" , style="margin-left:45%;margin-top:10px;">Search</button>
+    </form>
+</body>
+</html>
