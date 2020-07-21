@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>SEARCH</title>
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body , style="background-color?:beige;">
+<section class="header">
+     <nav class="navbar navbar-expand-lg navbar-light", style="background-color:pink;">
+  <a class="navbar-brand" href="#"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" style="margin-left:auto; ">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">LOGOUT</a>
+      </li>
+        <li class="nav-item"><a class="nav-link" href="#">{{ session.user_name }}</a></li>
+
+
+    </ul>
+  </div>
+</nav>
+</section>
+   <h1 style="
+    margin-left: 37%;
+    margin-top: 50px;
+    text-transform: uppercase;
+">Search Results</h1>
+<div class="dropdown-divider"></div>
+
+<div class="container results-container">
+
+    {% for book in books %}
+        <div class="card border-primary mb-3" style="width: 65rem; text-align:center; background-color:gainsboro;">
+            <div class="card-body">
+                <h4 class="card-title">{{book['title']}}</h4>
+                <h6 class="card-text">{{book['author']}}</h6>
+                <h6 class="card-text">{{book['year']}}</h6>
+                <h6 class="card-text">{{book['isbn']}}</h6>
+            </div>
+            <div class="card-footer">
+                <a href="/book/{{book['isbn']}}" class="card-link">Go to book page</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
