@@ -24,24 +24,21 @@ $ python3 import.py
 # Features
 ## User Registration
 User registration is required in order to use web features. -register
-![register](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/register.PNG)
+
 
 # Login
 Registered user can login to web. -login
-![login](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/login.PNG)
 
 # Search
 Users can search for book by ISBN, Book Title or Book Author. -search
-![search](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/search.PNG)
 
 # Search Result
 Search Result shows result based on search criteria (ISBN, Title, Author, Year)-result
-![search result](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/search results.PNG)
 
 # Book Details
 Details page shows User Review Details (if already submitted by user), Goodreads Review Details section. Details page allows user to submit review only once. -resultbook
-![reviews](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/reviews.PNG)
 
 # API Access
 If users make a GET request to your website’s /api/ It returns resulting JSON a valid api or invalid.
-![api](https://raw.githubusercontent.com/mitchellshera/web50-projects-2020-x-1/master/screenshots/Annotation 2020-07-21 192158.PNG)
+
+#Screenshots of the project pages are in a folder called Screenshots.
