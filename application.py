@@ -54,8 +54,8 @@ def login():
             return render_template("error.html", message="must provide password")
 
 
-        logquery = db.execute("SELECT * FROM usernames WHERE username = :username",
-                          {"username": username})
+        logquery = db.execute("SELECT * FROM usernames WHERE username = :username ",
+                          {"username": username })
 
         result = logquery.fetchone()
 
@@ -275,3 +275,6 @@ def book_api(isbn):
 		review_count= count,
 		average_score= float(average)
 	)
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
